@@ -1,0 +1,25 @@
+<section style="background-color:#ffedda" >
+    <div class="container p-3">
+        <br>
+        <h2 class = "text-center" style = "color: #99836c;">TRAINING</h2>
+        <hr>
+        <app-certifications></app-certifications>
+
+        <br>
+        <div class="table-responsive">
+            <table class="table table-bordered border" style="max-width: 60rem; margin: 0 auto;">
+                <tbody>
+                  <tr>
+                    <th class = "col-6 h5" style = "background-color: #ffdebc;">Seminars</th>
+                    <td class = "col-6" style = "background-color: #ffe5cb;;">
+                        @for (item of seminar; track $index){
+                            <p><b>{{ item.title }}</b> <br> Year: {{ item.year }}</p>
+                        }
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+</section>

@@ -1,0 +1,23 @@
+<section style="background-color:#ffedda" >
+    <div class="container p-3">
+        <br>
+        <h2 class = "text-center" style="color: #99836c;">EDUCATIONAL BACKGROUND</h2>
+        <hr>
+        <br>
+
+        @for (item of educ; track $index){
+            <div class="resume-item card" style = "max-width: 40rem;margin: 0 auto;">
+                <div class="card-header text-uppercase" style="background-color: #ffdbb5;">
+                    <h4>{{ item.schLevel }}</h4>
+                </div>
+                <div class="card-body" style = "background-color: #ffe5cb;">
+                    <h5 class = "card-title">{{ item.school }}</h5>
+                    <p class = "card-text"><b>Years Attended: </b>{{ item.years }}</p>
+                </div>
+            </div>
+            <br>
+        }
+        
+    </div>
+    
+</section>

@@ -1,0 +1,15 @@
+<br>
+<div class="table-responsive">
+    <table class="table table-bordered border" style="max-width: 60rem; margin: 0 auto;">
+        <tbody>
+          <tr>
+            <th class = "col-6 h5" style = "background-color: #ffdebc;">Skills Certifications</th>
+            <td class = "col-6" style = "background-color: #ffe5cb;;">
+                @for (item of cert; track $index){
+                    <p><b>{{ item.certName }}</b> <br> Year: {{ item.year }}</p>
+                }
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
